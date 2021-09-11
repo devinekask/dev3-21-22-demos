@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00 - method</title>
+</head>
+<body>
+    <script>
+        const checkGass = () => console.log(`the fuel of this ${car.brand} ${car.model} is ok`);
+       
+        const car = {
+            brand: `Lada`,
+            model: `Niva`,
+            airco: false,
+            doors: 3,
+            drive: () => {
+                console.log(`just start the car`);
+            },
+            checkFuel: checkGass
+        }
+
+        console.log(car);
+        car.drive();
+        car.checkFuel();
+
+        // having multiple cars
+        const secondCar = {brand: `Peugot`, model: `205`, airco: false, doors: 5, checkFuel: checkGass};
+        const thirdCar = { brand: `Renault`, model: `Twingo`, airco: false, doors: 5, checkFuel: checkGass };
+        const fourthCar = { brand: `Tesla`, model: `X`, airco: true, doors: 5, checkFuel: checkGass };
+        secondCar.checkFuel();
+        thirdCar.checkFuel();
+        fourthCar.checkFuel();
+    </script>
+</body>
+</html>

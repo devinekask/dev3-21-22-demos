@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - class and object</title>
+</head>
+<body>
+    <script>
+        // a class starts with the class keyword. The name starts with a capital
+        class Car{
+            // constructor: initializes properties
+            constructor(brand, model, airco, doors){
+                this.brand = brand;
+                this.model = model;
+                this.airco = airco;
+                this.doors = doors
+            }
+            // method with parameter
+            drive(direction){
+                console.log(`drive ${direction}`);
+            }
+            // method without parameter. This refers to the object
+            checkFuel(){
+                console.log(`this fuellevel of ${this.brand} ${this.model} is fine`);
+            }
+        }
+
+        const lada = new Car(`Lada`,`Niva`,false, 3);
+        console.log(lada);
+        lada.drive(`forwards`);
+        lada.checkFuel();
+
+        const renault = new Car(`Renault`,`Twingo`,false, 5);
+        const tesla = new Car(`Tesla`,`X`, true, 5);
+    </script>
+
+
+</body>
+</html>

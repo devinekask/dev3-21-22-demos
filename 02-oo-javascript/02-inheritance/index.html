@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Inheritance</title>
+</head>
+
+<body>
+    <script>
+        // create a base class with all common properties
+        class Vehicle {
+            // constructor: initializes properties
+            constructor(brand, model, color) {
+                this.brand = brand;
+                this.model = model;
+                this.color = color;
+            }
+            drive(direction) {
+                console.log(`${this.brand} ${this.model} drives ${direction}`);
+            }
+        }
+
+        // a car is a vehicle and inherits from the class Vehicle
+        // the keyword extends indicates that Car inherits everything from Vehicle
+        class Car extends Vehicle{
+            constructor(brand, model, color, airco, doors){
+                // the keyword super calls the constructor of the class Vehicle
+                super(brand, model, color);
+                // set the remaining properties
+                this.airco = airco;
+                this.doors = doors;
+            }
+            checkFuel() {
+                console.log(`this fuellevel of ${this.brand} ${this.model} is fine`);
+            }
+        }
+
+        // a bike is also a vehicle and can als inherit from the class Vehicle
+        class Bike extends Vehicle{
+            constructor(brand, model, color, frame){
+                super(brand, model, color);
+                this.frame = frame;
+            }
+            checkTires(){
+                console.log(`The tires of ${this.brand} ${this.model} are full of air`);
+            }
+        }
+
+        const myCar = new Car(`Tesla`,`X`,`red`,true, 5);
+        myCar.drive(`to the left`);
+        myCar.checkFuel();
+        //myCar.checkTires(); // error: method does not exist on the Car class
+
+        const myBike = new Bike(`Trek`,`Madone`, `green`, `carbon`);
+        myBike.drive(`to the right`);
+        myBike.checkTires();
+    </script>
+</body>
+
+</html>
