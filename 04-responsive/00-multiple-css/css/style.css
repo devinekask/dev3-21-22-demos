@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  padding: 1rem;
+}
+
+.container{
+  display: flex;
+}
+p{
+  line-height: 1.2;
+  text-align: justify;
+  padding: 2rem;
+}

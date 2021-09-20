@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html, body{
+  height: 100%;
+}
+
+.container{
+  width: 95%;
+  height: 95%;  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (orientation: landscape) {
+  .container{
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  .container{
+    flex-direction: column;
+  }
+}

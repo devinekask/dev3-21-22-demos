@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 1rem;
+}
+
+div{
+  padding: 1rem 0;
+}
+
+/* replace em with rem */
+.outer{
+  font-size: 0.8em;
+  width: 10em;
+  background-color: red;
+  margin-bottom: 5rem;
+}
+
+.inner{
+  font-size: 0.8em;
+  width: 10em;
+  background-color: blue;
+}
+
+.more-inner{
+  font-size: 0.8em;
+  width: 10em;
+  background-color: yellow;
+}
+
+/* replace % width vw */
+.outer2{
+  width: 50%;
+  background-color: red;
+}
+
+.inner2{
+  width: 50%;
+  background-color: blue;
+}
+
+.more-inner2{
+  width: 50%;
+  background-color: yellow;
+}

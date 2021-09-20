@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container{
+  width: 95%;
+  margin: 2rem auto;  
+}
+
+p{
+    font-family: serif;
+    font-size: 12px;
+    color: pink;
+}
