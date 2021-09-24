@@ -1,0 +1,42 @@
+<!-- 
+    Credits to Kevin Powell 
+    Check the full tutorial at: https://www.youtube.com/watch?v=Rik3gHT24AM
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qhm8wqj.css">
+    <title>04 - picture - srcset - sizes</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1 class="title">The picture element is really awesome</h1>
+            <p>It let’s us serve up completely different images depending on the situation at hand.</p>
+        </div>
+
+        <picture>
+            <source media="(min-width: 960px)" srcset="assets/all-business-large.jpg 534w,
+                      assets/all-business-large@2x.jpg 1068w,
+                      assets/all-business-large@3x.jpg 1602w" sizes="50vw">
+            <source media="(min-width: 600px)" srcset="assets/all-business-medium.jpg 474w,
+                      assets/all-business-medium@2x.jpg 984w,
+                      assets/all-business-medium@3x.jpg 1422w" sizes="50vw">
+            <source srcset="assets/all-business-small.jpg 273w,
+                      assets/all-business-small@2x.jpg 546w,
+                      assets/all-business-small@3x.jpg 819w" sizes="50vw">
+            <img class="example" src="assets/all-business-small.jpg" alt="This cat is all business">
+        </picture>
+
+    </div>
+
+</body>
+
+</html>

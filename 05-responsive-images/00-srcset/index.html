@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>00 - srcset</title>
+</head>
+
+<body>
+    <img src="assets/cat-1500.jpeg" alt="scary cat" srcset="assets/cat-1500.jpeg 1500w,
+             assets/cat-1000.jpeg 1000w,
+             assets/cat-500.jpeg 500w" sizes="100vw">
+
+    <!-- alternative: use x (dpr) instead of w (width)-->
+    <img src="assets/cat-1500.jpeg" alt="scary cat" 
+        srcset="assets/cat-1500.jpeg 3x,
+                assets/cat-1000.jpeg 2x,
+                assets/cat-500.jpeg 1x">
+</body>
+
+</html>
