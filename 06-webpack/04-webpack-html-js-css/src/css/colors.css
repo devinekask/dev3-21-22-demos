@@ -1,0 +1,7 @@
+:root {
+  --color-primary: #45ac76;
+  --color-accent: #ff34c1;
+  --color-border: #ccc;
+}
+
+@custom-media --medium-screen (width >= 500px);

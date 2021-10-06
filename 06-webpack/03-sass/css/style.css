@@ -1,0 +1,31 @@
+.message, .success {
+  border: 0.1rem solid #ccc;
+  padding: 1rem;
+  color: #333;
+}
+
+.success {
+  border-color: #b3ffb3;
+  border-width: 1rem;
+}
+.success:hover {
+  background-color: yellow;
+}
+
+.outer {
+  color: blue;
+  padding: 1rem;
+  border: 0.1rem darkblue solid;
+}
+.outer .inner {
+  color: white;
+  background-color: red;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

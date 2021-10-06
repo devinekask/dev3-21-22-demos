@@ -1,0 +1,28 @@
+@import "./css/reset.css";
+@import "./css/colors.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.message{
+    border: 0.1rem solid var(--color-border);
+    padding: 1rem;
+    &:hover{
+      color: var(--color-accent);
+    }
+}
+
+
+@media (--medium-screen) {
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+}

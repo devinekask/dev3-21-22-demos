@@ -14,8 +14,8 @@ body{
 
 p{
   line-height: 1.2;
- /*  min-width: 200px;
-  max-width: 900px; */
+  min-width: 300px;
+  max-width: 600px; 
   width: 50%;
   text-align: justify;
 }

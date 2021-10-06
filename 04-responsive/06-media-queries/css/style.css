@@ -14,7 +14,7 @@ html,body,.container{
 
 .container {
   width: 100%;
-  max-width: 60rem;
+  max-width: 90rem;
 
   background-color: lightgray;
   margin: 0 auto;

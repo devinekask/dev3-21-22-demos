@@ -1,0 +1,40 @@
+// $border-width is a variable
+$boder-width: 0.1rem;
+
+// mixins: define general styles that can be reused through 
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.message{
+    border: $boder-width solid #ccc;
+    padding: 1rem;
+    color: #333;
+}
+
+// extending a class
+.success{
+    @extend .message;
+    border-color: lighten(green, 60%); // lighten is a function
+    border-width: calc($boder-width * 10); // calc is a function and uses an operator (*)
+    &:hover{
+        background-color: yellow;
+    }
+}
+
+.outer {
+     color: blue;
+     padding: 1rem;
+     border: $boder-width darkblue solid;
+     // nesting
+     & .inner { 
+         color: white; 
+         background-color: red;
+        }
+}
+
+.list{
+    @include reset-list;
+}
